@@ -9,7 +9,7 @@ import (
 func main() {
 	ips, err := net.LookupIP(os.Args[1])
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "Could not get IPs: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Não consegui achar o ip de: %v\n", err)
 		os.Exit(1)
 	}
 	for _, ip := range ips {
